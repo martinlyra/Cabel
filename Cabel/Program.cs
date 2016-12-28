@@ -16,11 +16,13 @@ namespace Cabel
 
             lg.AddLanguage(ReferenceLanguage.BuildFrom("lang/hebrew.txt"));
             lg.AddLanguage(ReferenceLanguage.BuildFrom("lang/chinese.txt"));
-            lg.SetDictionary(WordDictionary.BuildFrom("wordsEn.txt"));
+            lg.SetDictionary(WordDictionary.BuildFrom("words/wordsEn.txt"));
 
+            Console.WriteLine("Generating...");
             var ol = lg.Generate();
 
             ol.WriteToFile(lg);
+            Console.WriteLine("Done!");
         }
     }
 }

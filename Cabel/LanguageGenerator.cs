@@ -49,7 +49,7 @@ namespace Cabel
                 if (word == "") // Fuck off blank spaces
                     continue;
 
-                Console.WriteLine("Current word: " + word);
+                //Console.WriteLine("Current word: " + word);
                 var charSum = word.ToList().Sum(c => c);
                 var length = word.Length;
 
